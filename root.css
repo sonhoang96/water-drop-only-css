@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+}
+
+.app {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water-drop {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border-radius: 48% 52% 35% 65% / 39% 37% 63% 61%;
+    box-shadow: inset 10px 10px 10px rgb(0 0 0 / 4%), 10px 20px 15px rgb(0 0 0 / 15%), 10px 20px 20px rgb(255 255 255 / 10%), inset -10px -15px 10px rgb(255 255 255 / 60%);
+}
+
+.water-drop:before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    width: 25px;
+    height: 25px;
+    background: #ffffff60;
+    border-radius: 37% 63% 20% 80% / 46% 37% 63% 54%;
+}
+
+.water-drop:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    width: 15px;
+    height: 15px;
+    background: #ffffff60;
+    border-radius: 37% 63% 20% 80% / 46% 37% 63% 54%;
+}
+.water-drop:nth-child(2) {
+    transform: scale(0.5) translate(-250px, 190px);
+    border-radius: 52% 48% 58% 42% / 35% 29% 71% 65%;
+}
+.water-drop:nth-child(3) {
+    transform: scale(0.7) translate(-50px, 200px);
+    border-radius: 66% 34% 24% 76% / 44% 42% 58% 56% ;
+}
+.water-drop:nth-child(4) {
+    transform: scale(0.3) translate(300px, 300px);
+    border-radius: 28% 72% 32% 68% / 37% 32% 68% 63%;
+}
